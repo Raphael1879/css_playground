@@ -1,0 +1,29 @@
+$block-size: 5rem;
+
+.flex-parent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  height: 1000px;
+
+  div{
+    background-color: rgb(224, 241, 255);
+    border: 2px solid #000;
+    width: $block-size;
+    height: $block-size;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 150ms;
+
+    &:hover{
+      background-color: rgb(196, 226, 250);
+      transform: translateY(-1rem);
+    }
+  }
+}

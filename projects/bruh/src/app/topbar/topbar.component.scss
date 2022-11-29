@@ -1,0 +1,35 @@
+:host{
+  background-color: rgb(12, 145, 145);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  height: 4rem;
+  align-items: center;
+  align-content: center;
+  border-radius: 0 0 1rem 1rem;
+  min-width: 500px;
+
+  div {
+    cursor: pointer;
+    color: white;
+    height: 1.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 200ms;
+
+    &:hover,
+    &.active {
+      background-color: rgb(4, 83, 88);
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+app-icon-container{
+ position: absolute;
+ left: 1rem;
+}
